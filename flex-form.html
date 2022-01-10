@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex form</title>
+    <script src="https://kit.fontawesome.com/45339b76ba.js" crossorigin="anonymous"></script>
+    <style>
+        .form-container {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .form-box {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-box input,
+        button {
+            font-size: 1.3em;
+            padding: 4px;
+            margin-top: 10px;
+            border: 3px solid lightgray;
+            border-radius: 5px;
+        }
+
+        .form-box button {
+            background-color: rgb(8, 223, 90);
+            border-radius: 15px;
+            font-weight: 700;
+            color: rgb(15, 15, 15);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            padding-top: 20px;
+            margin-right: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(92, 241, 160);
+            padding: 10px;
+            border: 2px solid rgb(12, 12, 12);
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <span>
+                <a href="">HOME</a>
+                <a href="">MENU</a>
+                <a href="">PRODUCT</a>
+            </span>
+            <span>
+                <a href="">
+                    <i class="far fa-user"></i>
+                </a>
+                <a href=""><i class="fas fa-sign-out-alt"></i></a>
+            </span>
+
+
+        </nav>
+    </header>
+
+    <div class="form-container">
+
+        <div class="form-box">
+            <h2>Log In</h2>
+            <input type="email" name="email" placeholder="Enter your name" id="" required>
+            <input type="password" name="password" placeholder="Enter your password" id="" required>
+            <button type="submit">LOG IN</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
